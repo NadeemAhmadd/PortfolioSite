@@ -334,9 +334,12 @@ function Backround() {
                   var cell_data = cell_datas[j];
                   
                   //If the mouse button is down, updates the cell velocity using the mouse velocity
-                  if (mouse.down) {
-                      change_cell_velocity(cell_data, mouse_xv, mouse_yv, pen_size);
-                  }
+                //   if (mouse.down) {
+                //       change_cell_velocity(cell_data, mouse_xv, mouse_yv, pen_size);
+                //   }
+
+                    change_cell_velocity(cell_data, mouse_xv, mouse_yv, pen_size);
+                
   
                   //This updates the pressure values for the cell.
                   update_pressure(cell_data);
