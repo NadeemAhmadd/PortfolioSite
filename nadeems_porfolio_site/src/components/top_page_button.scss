@@ -1,0 +1,112 @@
+
+
+// // And from the left
+// .slide:hover,
+// .slide:focus {
+//   box-shadow: inset 6.5em 0 0 0 var(--hover);
+// }
+
+
+// //=== Set button colors
+// // If you wonder why use Sass vars or CSS custom properties...
+//   // Make a map with the class names and matching colors
+// $colors: (
+//   slide: #8fc866, 
+// );
+
+// // Sass variables compile to a static string; CSS variables are dynamic and inherited
+//   // Loop through the map and set CSS custom properties using Sass variables
+// @each $button, $color in $colors {
+//   .#{$button} {
+//     --color: #{$color};
+//     --hover: #{adjust-hue($color, 45deg)};
+//   }
+// }
+
+// button {  
+//   color: var(--color);
+//   transition: 0.25s;
+  
+//   &:hover,
+//   &:focus { 
+//     border-color: var(--hover);
+//     color: #fff;
+//   }
+// }
+
+
+// // Basic button styles
+// button {
+//   background: none;
+//   border: 2px solid;
+//   font: inherit;
+//   line-height: 1;
+//   margin: 0.5em;
+//   padding: 1em 2em;
+// }
+
+// h1 { font-weight: 400; }
+
+
+
+$colors: (
+  slide: #ffffff, 
+);
+
+
+@each $button, $color in $colors {
+  .#{$button} {
+    --color: #{$color};
+    --hover: #{adjust-hue($color, 45deg)};
+    --slide-distance: 100em;
+    --slide-duration: 0.3s;
+    --fill-duration: 0.4s;
+    color: var(--color);
+    position: relative;
+    overflow: hidden;
+    transition: color var(--fill-duration) ease-in-out, background-color var(--fill-duration) ease-in-out;
+    background-color: transparent;
+    border: none;
+    font: inherit;
+    line-height: 1;
+    width: 200px;
+    margin: 0.5em;
+    padding: 1em 2em;
+    cursor: pointer;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: var(--hover);
+      transition: width var(--slide-duration) ease-in-out;
+      z-index: -1;
+    }
+
+    &:hover:before {
+    //   width: var(--slide-distance);
+      width: 1em; // Decrease the width of the sliding bar to 30%
+
+    }
+
+    &:hover {
+      color: rgb(0, 0, 0);
+      background-color: var(--hover);
+
+    }
+  }
+}
+
+.centered-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .my-div {
+    // margin-left: 700px;
+    // margin-right: 20px;
+    margin: 0 auto;
+  }
