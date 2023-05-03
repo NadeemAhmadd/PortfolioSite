@@ -51,7 +51,7 @@ body {
   position: absolute;
   width: 60vw;
   height: 60vw;
-  background-color: #00c2ff;
+  background-color: #0f5555;
   border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
   filter: blur(1rem);
   mix-blend-mode: overlay;
@@ -64,7 +64,7 @@ body {
 }
 
 .aurora__item:nth-of-type(2) {
-  background-color: #FFFF00;
+  background-color: #12a0a0;
   right: 0;
   top: 0;
   animation: aurora-border 6s ease-in-out infinite,
@@ -72,7 +72,7 @@ body {
 }
 
 .aurora__item:nth-of-type(3) {
-  background-color: #FF00FF;
+  background-color: #147c7c;
   left: 0;
   bottom: 0;
   animation: aurora-border 6s ease-in-out infinite,
@@ -80,7 +80,7 @@ body {
 }
 
 .aurora__item:nth-of-type(4) {
-  background-color: #e54cff;
+  background-color: #105757;
   right: 0;
   bottom: -50%;
   animation: aurora-border 6s ease-in-out infinite,

@@ -66,7 +66,7 @@ $colors: (
     overflow: hidden;
     transition: color var(--fill-duration) ease-in-out, background-color var(--fill-duration) ease-in-out;
     background-color: transparent;
-    border: none;
+    border: 10px solid white; /* Add a white border with a width of 2px */
     font: inherit;
     line-height: 1;
     width: 200px;

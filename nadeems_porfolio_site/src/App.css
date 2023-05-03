@@ -3,6 +3,15 @@
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+.section1 {
+  height: 1000px;
+  padding-top: 300px;
+
+}
 
 @keyframes fadeIn {
   from {
