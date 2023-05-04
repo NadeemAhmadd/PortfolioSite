@@ -7,7 +7,7 @@ import "./App.css";
 import ScrollToTop from "./components/ScrollToTop.js";
 import TopPageButton from './components/top_page_button';
 import MenuBar from './components/MenuBar';
-
+import PictureBox from './components/PictureBox';
 
 function App() {
   const aboutRef = useRef(null);
@@ -20,7 +20,7 @@ function App() {
     <div class="content fade-in">
     
 
-    <section className='section1' id="titlepage" ref={homeRef} > 
+    <section className='section1 content' id="titlepage" ref={homeRef} > 
     <Backround/>
 
     <h1  class="title  cursor typewriter-animation">Hello, My name is Nadeem.
@@ -42,9 +42,30 @@ function App() {
         projectRef={projectRef}
       />
     </section>
-    <section id="about" ref={aboutRef}>
+    <section className='section2' id="about" ref={aboutRef}>
 
-    <h1>testing</h1>
+    <h2 class="about__heading section-heading">About</h2>
+    <div style={{ marginLeft: '700px' }}>
+    <div class="picture-box-container">
+      <PictureBox />
+      <PictureBox />
+      <PictureBox />
+      <PictureBox />
+    </div>
+    <div class="picture-box-container">
+      <PictureBox />
+      <PictureBox />
+      <PictureBox />
+    </div>
+    <div class="picture-box-container">
+      <PictureBox />
+      <PictureBox />
+      <PictureBox />
+      <PictureBox />
+    </div>
+    </div>
+
+
     </section>
 
 

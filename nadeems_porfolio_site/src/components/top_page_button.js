@@ -13,7 +13,7 @@ class TopPageButton extends React.Component {
     //   <button className="slide">Slide</button>
       <div class="slide centered-div my-div" 
       onClick={this.handleClick}
-      style={{ border: "1px solid black", borderRadius: "4px", boxSizing: "border-box", }}>Click me
+      style={{ border: "1px solid black", borderRadius: "4px", boxSizing: "border-box", }}>View My Work
       
       </div>
 
