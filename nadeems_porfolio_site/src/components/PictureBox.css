@@ -19,8 +19,8 @@ body {
   font-family: 'Raleway';
   font-size: 2.5rem;
 
-  width: 10vh;
-  height: 10vh; /* set height to 100% of viewport height */
+  width: 15vh;
+  height: 15vh; /* set height to 100% of viewport height */
   margin-left: 20px;
   margin-right: 20px;
 }

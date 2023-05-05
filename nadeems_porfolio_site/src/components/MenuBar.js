@@ -3,17 +3,7 @@ import {React, useRef} from 'react';
 import './MenuBar.css';
 
 function MenuBar(props) {
-    // const handleClick = (ref) => {
-    //   ref.current.scrollIntoView({ behavior: 'smooth' });
-    // };
 
-    // const handleClick = (ref) => {
-    //     ref.current.scrollIntoView({
-    //       behavior: 'smooth',
-    //       block: 'start',
-    //       inline: 'nearest'
-    //     });
-    //   };
 
     const handleClick = (ref) => {
         window.scrollTo({
