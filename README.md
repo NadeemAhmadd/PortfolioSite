@@ -6,6 +6,7 @@ Welcome to my portfolio site! This project showcases my skills as a web develope
 
 - HTML
 - CSS
+- SCSS
 - JavaScript
 - React
 
