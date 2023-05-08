@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './backround.css';
 
-function Backround() {
+function Backround(props) {
   useEffect(() => {
     (function(w) {
 
@@ -47,7 +47,7 @@ function Backround() {
       function init() {
           
           //These lines get the canvas DOM element and canvas context, respectively.
-          canvas = document.getElementById("c");
+          canvas = document.getElementById(props.id);
           ctx = canvas.getContext("2d");
   
           //These two set the width and height of the canvas to the defined values.
@@ -603,10 +603,10 @@ function Backround() {
   window.requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame;
   
   //And this line calls the init() function defined above to start the script.
-  }, []);
+  },  [props.id]);
 
   return (
-  <canvas id="c"></canvas>);
+  <canvas id={props.id}></canvas>);
 }
 
 export default Backround;

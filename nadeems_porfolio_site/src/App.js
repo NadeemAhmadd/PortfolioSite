@@ -21,7 +21,7 @@ function App() {
     
 
     <section className='section1 content' id="titlepage" ref={homeRef} > 
-    <Backround/>
+    <Backround id="Canvas1"/>
 
     <h1  class="title  cursor typewriter-animation" style={{ marginTop: '350px' }}>Hello, My name is Nadeem.
         <div class="aurora">
@@ -44,6 +44,7 @@ function App() {
     </section>
     <section className='section2' id="about" ref={aboutRef}>
     <AboutBar/>
+    {/* <Backround id="Canvas2"/> */}
 
     <h3 class="section2-heading about__heading" style={{ marginTop: '0px' }}>About</h3>
     <img src={require('./images/html.png')} style={{ marginRight: '700px',marginTop: '100px' , width: '10%' }}/>
