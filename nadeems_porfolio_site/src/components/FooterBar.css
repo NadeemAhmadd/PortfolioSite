@@ -1,0 +1,12 @@
+.footerbar {
+    margin: 0 auto;
+    position: relative;
+    left: -50px;
+    bottom: 159px;
+    position: absolute;
+    width: 120%;
+    height: 40px; /* adjust as needed */
+    background-color: #009999; /* bar color */
+    z-index: -1;
+
+  }

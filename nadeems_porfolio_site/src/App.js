@@ -9,6 +9,7 @@ import MenuBar from "./components/MenuBar";
 import PictureBox from "./components/PictureBox";
 import AboutBar from "./components/AboutBar";
 import Project_button from "./components/project_button";
+import FooterBar from "./components/FooterBar";
 
 function App() {
   const aboutRef = useRef(null);
@@ -47,7 +48,6 @@ function App() {
       </section>
       <section className="section2" id="about" ref={aboutRef}>
         <AboutBar />
-        {/* <Backround id="Canvas2"/> */}
 
         <h3
           class="section2-heading about__heading"
@@ -91,7 +91,7 @@ function App() {
         </div>
       </section>
 
-      <section className="container section3" id="project" ref={projectRef}>
+      <section  id="project" ref={projectRef}>
         <h3
           class="section2-heading project__heading"
           style={{ marginTop: "0px" }}
@@ -107,7 +107,6 @@ function App() {
                 Mri tumor detection and classification with deep learning.
                 Built with Python, TensorFlow, Keras, sckit-learn and Matplotlib.
               </small>
-              <Project_button/>
               <img
                 className="project_img"
                 src={require("./gifs/testing.gif")}
@@ -116,10 +115,81 @@ function App() {
                 height="300"
                 style={{ float: "right" }}
               />
+              <Project_button/>
             </div>
           </div>
+
+
+          <div className="projectbox left-align-project">
+            <div className="project-description-align">
+              <h3 className="heatwave__heading">HeatWave</h3>
+              <small className="project-description-align">
+              Remote temprerature controlled self-heating water
+              bottle built with JavaScript, React.js, C and Arduino.
+              </small>
+              <img
+                className="project_img"
+                src={require("./gifs/testing.gif")}
+                alt=""
+                width="400"
+                height="300"
+                style={{ float: "right" }}
+              />
+              <Project_button/>
+            </div>
+          </div>
+
+
+          <div className="projectbox left-align-project">
+            <div className="project-description-align">
+              <h3 className="laurier-chat__heading">Laurier Chat</h3>
+              <small className="project-description-align">
+              Machine learning chatbot, replacing the professors email
+              built with, Python, TensorFlow, Kotlin, Java and Heroku.
+              </small>
+              <img
+                className="project_img"
+                src={require("./gifs/testing.gif")}
+                alt=""
+                width="400"
+                height="300"
+                style={{ float: "right" }}
+              />
+              <Project_button/>
+            </div>
+          </div>
+
+          <div className="projectbox left-align-project">
+            <div className="project-description-align">
+              <h3 className="three-way-matching__heading">3-Way-Matching Research</h3>
+              <small className="project-description-align">
+              Research on advanced algorithms for Hadamard matrix of order 668,
+              which has applications in the pharmaceutical and radar industry
+              </small>
+              <img
+                className="project_img"
+                src={require("./gifs/testing.gif")}
+                alt=""
+                width="400"
+                height="300"
+                style={{ float: "right" }}
+              />
+              <Project_button/>
+            </div>
+          </div>
+
+
         </div>
+
       </section>
+
+     <section>
+      <footer className="footer" >
+        <div>Nadeem Ahmad ©2023</div>
+      </footer>
+      </section>
+   
+
     </div>
   );
 }

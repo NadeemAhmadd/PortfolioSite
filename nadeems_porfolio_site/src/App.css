@@ -20,6 +20,11 @@ html {
 
 }
 
+.section4 {
+  height: 800px;
+  /* margin-top: -200px; */
+
+}
 
 .profile__blurb {
   text-align: left;
@@ -31,7 +36,7 @@ html {
 }
 
 .content {
-  margin-top: 1525px;
+  margin-top: 1039px;
 }
 
 .picture-box-container {
@@ -98,7 +103,46 @@ html {
   display: block;
   margin: 0 auto;
   position: relative;
-  left: -13.0rem;
+  left: -12.0rem;
+  top: 1.8rem;
+  z-index: -1;
+}
+
+.heatwave__heading:before {
+  position: absolute;
+  content: '';
+  border-bottom: 12px solid #009999;
+  width: 8rem;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  left: -13.5rem;
+  top: 1.8rem;
+  z-index: -1;
+}
+
+.laurier-chat__heading:before {
+  position: absolute;
+  content: '';
+  border-bottom: 12px solid #009999;
+  width: 9.5rem;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  left: -13rem;
+  top: 1.8rem;
+  z-index: -1;
+}
+
+.three-way-matching__heading:before {
+  position: absolute;
+  content: '';
+  border-bottom: 12px solid #009999;
+  width: 20rem;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  left: -7rem;
   top: 1.8rem;
   z-index: -1;
 }
@@ -130,33 +174,15 @@ html {
 }
 
 
-/* .projectbox {
-  max-width: calc(34em - 2rem);
-
-  padding: 2rem;
-  border: 5px solid #009999;
-  border-radius: 16px;
-  font-size: 1.3rem;
-  margin-bottom: 5rem;
-  }
-
-.left-align-project{
-  margin-left: 0;
-}
-
-.right-align-project{
-  margin-right: 0;
-
-} */
 
 
 .projectbox {
   width: calc(50rem - 2rem);
-  padding: 2rem;
+  padding: 1rem;
   border: 5px solid #009999;
   border-radius: 16px;
   font-size: 1.3rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
 }
 .projectbox h3 {
   text-align: left;
@@ -165,7 +191,7 @@ html {
 .left-align-project {
   margint-left: 50rem;
   margin-right: 2rem;
-  width: 45rem;
+  width: 40rem;
   float: left;
 }
 
@@ -190,3 +216,17 @@ html {
   padding-top: 18px;
 }
 
+
+.footer {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-top:1000px;
+  background-color: #009999;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
