@@ -31,7 +31,7 @@ html {
 }
 
 .content {
-  margin-top: 600px;
+  margin-top: 1525px;
 }
 
 .picture-box-container {
@@ -76,6 +76,32 @@ html {
   z-index: -1;
 }
 
+.project__heading:before {
+  position: absolute;
+  content: '';
+  border-bottom: 12px solid #009999;
+  width: 12rem;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  left: 1.6rem;
+  top: 3.1rem;
+  z-index: -1;
+}
+
+
+.neuroclassify__heading:before {
+  position: absolute;
+  content: '';
+  border-bottom: 12px solid #009999;
+  width: 11rem;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  left: -13.0rem;
+  top: 1.8rem;
+  z-index: -1;
+}
 
 .section2-heading {
   margin-top: 6rem;
@@ -102,3 +128,65 @@ html {
     opacity: 1;
   }
 }
+
+
+/* .projectbox {
+  max-width: calc(34em - 2rem);
+
+  padding: 2rem;
+  border: 5px solid #009999;
+  border-radius: 16px;
+  font-size: 1.3rem;
+  margin-bottom: 5rem;
+  }
+
+.left-align-project{
+  margin-left: 0;
+}
+
+.right-align-project{
+  margin-right: 0;
+
+} */
+
+
+.projectbox {
+  width: calc(50rem - 2rem);
+  padding: 2rem;
+  border: 5px solid #009999;
+  border-radius: 16px;
+  font-size: 1.3rem;
+  margin-bottom: 5rem;
+}
+.projectbox h3 {
+  text-align: left;
+  margin: 0.1rem 0;
+}
+.left-align-project {
+  margint-left: 50rem;
+  margin-right: 2rem;
+  width: 45rem;
+  float: left;
+}
+
+.check-shift{
+  margin-left:2rem;
+}
+
+
+.right-align-project {
+  margin-left: 2rem;
+  width: calc(50% - 2rem);
+  float: right;
+}
+
+.project-description-align{
+  text-align: left;
+
+}
+
+.project_img {
+  border-radius: 5%;
+  padding-top: 18px;
+}
+
